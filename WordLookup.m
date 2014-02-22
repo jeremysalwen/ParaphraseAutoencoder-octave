@@ -1,7 +1,7 @@
 function index = WordLookup(InputString)
 global wordMap
-if wordMap.isKey(InputString)
-    index = wordMap(InputString);
+if wordMap.containsKey(InputString)
+    index = wordMap.get(InputString);
 else
-    index=wordMap('*UNKNOWN*');
+    index=wordMap.get('*UNKNOWN*');
 end

@@ -1,7 +1,12 @@
 load('vars.normalized.100.mat');
 
+pkg load java;
 global wordMap;
-wordMap = containers.Map(words,1:length(words));
+wordMap = javaObject("java.util.HashMap");
+for i=1:length(words)
+	wordMap.put(words(i),i);
+end
+%containers.Map(words,1:length(words));
 
 allSNum = {};
 allSStr = {};
@@ -98,8 +103,8 @@ for i=1:length(fileLines)
         
         if startsBranch && nextIsWord
             numWords = 1;
-            mm = regexp(line{s+numWords},'(');
-            m = regexp(line{s+numWords},')');
+            mm = regexp(line{s+numWords},'\(');
+            m = regexp(line{s+numWords},'\)');
             while length(m) <= length(mm)%isempty(m)
                 word = line{s+numWords};
                 word = lower(word);
