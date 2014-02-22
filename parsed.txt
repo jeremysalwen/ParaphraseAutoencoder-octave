@@ -1,0 +1,116 @@
+(ROOT
+  (NP (JJ hello) (NN world)))
+
+(ROOT
+  (FRAG
+    (NP (DT the) (NN cat))))
+
+(ROOT
+  (NP (NN market)))
+
+(ROOT
+  (S
+    (NP
+      (NP (NNS Scores))
+      (PP (IN of)
+        (NP (NNS properties))))
+    (VP (VBP are)
+      (PP (IN under)
+        (NP (JJ extreme) (NN fire) (NN threat)))
+      (SBAR (IN as)
+        (S
+          (NP (DT a) (JJ huge) (NN blaze))
+          (VP (VBZ continues)
+            (S
+              (VP (TO to)
+                (VP (VB advance)
+                  (PP (IN through)
+                    (NP
+                      (NP (NNP Sydney) (POS 's))
+                      (JJ north-western) (NNS suburbs))))))))))
+    (. .)))
+
+(ROOT
+  (S
+    (NP (NNP Fires))
+    (VP (VBP have)
+      (ADVP (RB also))
+      (VP (VBN shut)
+        (PRT (RP down))
+        (NP
+          (NP (DT the) (JJ major) (NN road)
+            (CC and)
+            (NN rail) (NNS links))
+          (PP (IN between)
+            (NP (NNP Sydney)
+              (CC and)
+              (NNP Gosford))))))
+    (. .)))
+
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (JJ promotional) (NN stop))
+      (PP (IN in)
+        (NP (NNP Sydney))))
+    (VP (VBD was)
+      (NP (NN everything)
+        (S
+          (VP (TO to)
+            (VP (VB be)
+              (VP (VBN expected)
+                (PP (IN for)
+                  (NP
+                    (NP (DT a) (NNP Hollywood) (NN blockbuster))
+                    (: -)
+                    (NP
+                      (NP (NNS phalanxes))
+                      (PP (IN of)
+                        (NP
+                          (NP (NNS photographers))
+                          (, ,)
+                          (NP (DT a) (NN stretch) (NN limo)))))))
+                (PP
+                  (PP (TO to)
+                    (NP
+                      (NP (DT a) (NN hotel))
+                      (PP (IN across)
+                        (NP (DT the) (NNP Quay)))))
+                  (: -)
+                  (CC but)
+                  (PP (IN with)
+                    (NP (CD one) (NN difference))))))))))
+    (. .)))
+
+(ROOT
+  (S
+    (NP
+      (NP (DT A) (NN line-up))
+      (PP (IN of)
+        (NP (NNS masseurs))))
+    (VP (VBD was)
+      (VP (VBG waiting)
+        (S
+          (VP (TO to)
+            (VP (VB take)
+              (NP (DT the) (NNS media))
+              (PP (IN in)
+                (NP (NN hand))))))))
+    (. .)))
+
+(ROOT
+  (S
+    (NP (NNP Never))
+    (VP (VBZ has)
+      (NP
+        (NP (DT the) (NN term))
+        (SBAR
+          (S (`` ``)
+            (S
+              (VP (VBG massaging)
+                (NP (DT the) (NNS media))))
+            ('' '')
+            (VP (VBD seemed)
+              (ADJP (RB so) (JJ accurate)))))))
+    (. .)))
+
