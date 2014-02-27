@@ -3,7 +3,7 @@ load('vars.normalized.100.mat');
 global wordMap;
 wordMap = javaObject("java.util.HashMap");
 for i=1:length(words)
-	wordMap.put(words(i),i);
+	wordMap.put(words{i},i);
 end
 %containers.Map(words,1:length(words));
 
