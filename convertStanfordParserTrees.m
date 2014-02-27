@@ -1,6 +1,5 @@
 load('vars.normalized.100.mat');
 
-pkg load java;
 global wordMap;
 wordMap = javaObject("java.util.HashMap");
 for i=1:length(words)
