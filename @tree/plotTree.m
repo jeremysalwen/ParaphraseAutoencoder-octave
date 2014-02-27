@@ -1,47 +1,4 @@
-classdef tree
-    
-    properties
-        % parent pointers
-        pp = [];
-        nodeNames;
-        nodeFeatures;
-        nodeOut;
-        leafFeatures=[];
-        isLeafnode = [];
-        % the parent pointers do not save which is the left and right child of each node, hence:
-        % numNodes x 2 matrix of kids, [0 0] for leaf nodes
-        kids = [];
-        % matrix (maybe sparse) with L x S, L = number of unique labels, S= number of segments
-        nodeLabels=[];
-        score=0;
-        nodeScores=[];
-        pos={};
-    end
-    
-    
-    methods
-        function id = getTopNode(obj)
-            id = find(obj.pp==0);
-        end
-        
-        function kids = getKids(obj,node)
-            %kids = find(obj.pp==node);
-            kids = obj.kids(:,node);
-        end
-
-        %TODO: maybe compute leaf-node-ness once and then just check for it
-        function l = isLeaf(obj,node)
-%             l = ~any(obj.pp==node);
-%             if node > length(obj.isLeafnode)
-%                 l = 0;
-%             else
-                l = obj.isLeafnode(node);
-%             ends
-        end        
-        
-        
-        
-        function plotTree(obj)
+function ab=plotTree(obj)
             %TREEPLOT Plot picture of tree.
             %   TREEPLOT(p) plots a picture of a tree given a row vector of
             %   parent pointers, with p(i) == 0 for a root and labels on each node.
@@ -75,6 +32,7 @@ classdef tree
             xlabel(['height = ' int2str(h)]);
             axis([0 1 0 1]);
             
+                display(obj.nodeNames);
             if ~isempty(obj.nodeNames)
                 for l=1:length(obj.nodeNames)
                         if isnumeric(obj.nodeNames(l))
@@ -117,8 +75,5 @@ classdef tree
             end
             
             
-        end
-        
-        
-    end
 end
+        
